@@ -1,0 +1,13 @@
+
+.details-container {
+  padding-top: 100px !important;
+}
+.img {
+  width: 100%;
+  height: 500px;
+}
+
+.spinner {
+  /* padding-top: 200px; */
+  height: 100vh;
+}

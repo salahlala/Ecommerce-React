@@ -1,0 +1,132 @@
+
+.modal {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 1100px;
+  z-index: 99;
+  animation: test .5s ease both;
+  max-height:  85vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+@media(max-width: 1024px) {
+  .modal {
+    width: 90%;
+
+  }
+}
+@keyframes test {
+  0% {
+    opacity: 0;
+    top: 40%;
+  }
+  100%{
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000042;
+  z-index: 99;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 25px;
+  width: auto !important;
+  z-index: 9;
+}
+
+/* 
+.counter {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.counter:focus {
+  outline: none;
+}
+.quantity{
+  width: 150px;
+}
+.quantity span:first-child {
+  left: 0;
+
+}
+.quantity span:last-child {
+  right: 0;
+}
+.btns {
+  padding: 5px 8px;
+  border: 1px solid rgb(207, 207, 207);
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.btns svg {
+  fill: var(--black-color);
+  font-size: 21px;
+}
+.actions {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.actions button {
+  background-color: #f6f6f6;
+    border-radius: 0;
+    border: 1px solid rgb(207, 207, 207);
+
+}
+.actions .cart {
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  background-color: var(--black-color);
+  display: flex;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.actions button:hover {
+  background-color: var(--main-color);
+}
+
+.tooltip {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #dadce0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: transparent; */
+  /* border-radius: 0;
+}
+.tooltip svg {
+  font-size: 20px;
+  fill: var(--black-color);
+}
+.actions button:hover svg {
+  fill: #fff;
+} */ 

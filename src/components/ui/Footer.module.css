@@ -1,0 +1,35 @@
+.footer {
+  background-color: #f3f3f3;
+  min-height: 300px;
+}
+.links {
+  cursor: pointer;
+  transition: .3s ease;
+  width: fit-content;
+}
+.links:hover {
+  color: var(--main-color) !important
+}
+.footer-icon svg{
+  transition: .3s;
+  cursor: pointer;
+}
+.footer-icon svg:hover {
+  fill: var(--main-color);
+}
+.phone {
+  color: var(--black-color);
+  font-size: 22px;
+}
+/* .logo {
+  width: 120px;
+} */
+
+.logo {
+  height: 80px;
+}
+.logo h1{
+  color:var(--main-color);
+  font-weight: bold;
+  font-size: 30px;
+}

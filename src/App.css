@@ -1,0 +1,40 @@
+.scroll-btn {
+  bottom: 40px;
+  right: 30px;
+  background-color: var(--black-color);
+  width: 50px;
+  height: 50px;
+  z-index: 55;
+  cursor: pointer;
+  transition: .3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.scroll-btn.active{
+  visibility: visible;
+  opacity: 1;
+
+  animation: show .8s ;
+}
+@keyframes show {
+  0%{
+    bottom: -20px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    bottom: 40px;
+    opacity: 1;
+    visibility: visible;
+
+  }
+}
+
+.scroll-btn:hover {
+  transform: translateY(-7px);
+}
+
+.scroll-btn svg {
+  fill: #fff;
+  font-size: 30px;
+}

@@ -1,0 +1,28 @@
+.main {
+  height:calc( 100vh - 70px);
+  background-color: #f0f0f5;
+}
+
+.title {
+  font-size: 480px;
+  color: #fff;
+  font-weight: 700;
+
+}
+
+.msg {
+  font-size: 50px;
+  color:var(--black-color);
+  font-weight: 700;
+
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  background-color: var(--black-color);
+}

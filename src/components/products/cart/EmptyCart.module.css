@@ -1,0 +1,9 @@
+.shopBtn {
+  background-color: #eee;
+  color: black;
+  transition: .3s ease;
+}
+.shopBtn:hover {
+  background-color: var(--black-color);
+  color: #fff; 
+}

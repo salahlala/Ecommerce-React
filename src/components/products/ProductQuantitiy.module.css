@@ -1,0 +1,41 @@
+
+.counter {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.counter:focus {
+  outline: none;
+}
+.quantity{
+  width: 150px;
+}
+.quantity span:first-child {
+  left: 0;
+
+}
+.quantity span:last-child {
+  right: 0;
+}
+.btns {
+  padding: 5px 8px;
+  border: 1px solid rgb(207, 207, 207);
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+
+.btns svg {
+  fill: var(--black-color);
+  font-size: 21px;
+  transition:all .3s ease;
+}
+.btns:hover svg {
+  fill: var(--main-color);
+}

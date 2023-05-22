@@ -1,0 +1,150 @@
+.landing {
+  min-height: calc(100vh - 80px);
+  background-color: #eee;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper-slide {
+  background-position: center;
+  min-height: calc(100vh - 80px);
+  background-size: cover;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* text-align: left; */
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+ .first {
+  background-image: url(../../images/back1.jpg);
+}
+
+.second {
+  background-image: url(../../images/back2.jpg);
+}
+
+.details {
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title {
+  color :var(--black-color);
+  font-size: 62px;
+  animation-play-state: paused;
+  opacity: 1;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 25px;
+  }
+}
+.detail {
+  letter-spacing: 5px;
+  font-size: 32px;
+  animation-play-state: paused;
+  position: relative;
+
+}
+@media(max-width: 991px) {
+  .detail {
+    font-size: 22px ;
+  }
+}
+@media (max-width: 767px) {
+  .detail {
+    font-size: 15px;
+  }
+}
+.desc {
+  animation-play-state: paused;
+  position: relative;
+}
+@media (max-width: 767px ) {
+  .desc {
+    font-size: 13px;
+  }
+}
+.active .detail {
+  animation: splash 1.2s 1.2s paused both;
+  animation-play-state: running;
+}
+
+.active .desc {
+  animation: splash 1.2s 1.7s paused both;
+  animation-play-state: running;
+}
+
+.active .title {
+  animation: splash 1.2s paused both;
+  animation-play-state: running;
+}
+.active .btn {
+  animation: splash 1.2s 2.5s paused both;
+  animation-play-state: running;
+}
+
+
+
+@keyframes splash {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    top: -105px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+    visibility: visible;
+
+  }
+}
+
+
+.btn {
+  border: 1px solid var(--black-color);
+  text-decoration: none;
+  color:var(--black-color);
+  transition: .3s;
+  animation-play-state: paused;
+  position: relative;
+  font-size: 25px;
+}
+
+@media (max-width: 991px) {
+  .btn {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .btn {
+    font-size: 17px;
+  }
+}
+.btn:hover {
+  background-color: var(--black-color);
+  color: #fff;
+}

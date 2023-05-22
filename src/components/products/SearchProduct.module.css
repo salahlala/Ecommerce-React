@@ -1,0 +1,31 @@
+.spinner {
+  height: calc(100vh - 80px);
+
+  text-align: center;
+}
+.main-container {
+  min-height: calc(100vh - 80px);
+}
+.load-btn {
+  transition: .3s ease;
+  background-color: transparent;
+
+
+}
+.load-btn:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+
+}
+.select  {
+  width: 220px;
+}
+.select:focus {
+  outline: none;
+}
+
+
+.notfound {
+  height: 400px;
+  
+}

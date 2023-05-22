@@ -1,0 +1,94 @@
+.box {
+  animation: show .8s ease-in;
+}
+@keyframes show {
+  0%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    opacity: 1;
+    visibility: visible;
+
+  }
+}
+.img {
+  max-width: 100%;
+  height: 300px;
+  width: 100%;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -220px;
+  top:30px;
+  z-index: 2;
+  gap: 5px;
+  transition: all .4s ease-in-out;
+}
+
+
+.box:hover .icons{
+  right: 20px;
+}
+.box:hover img {
+  transform: scale(1.1);
+}
+.icons svg {
+  fill: #000;
+  font-size: 22px;
+}
+.icons .icon {
+  background-color: #fff;
+  transition: .4s ease;
+  cursor: pointer;
+}
+.icon.active {
+  background-color: var(--main-color);
+}
+.icon.active svg {
+  fill: #fff;
+}
+
+.icons .icon:hover{
+  background-color: var(--main-color);
+}
+.icons .icon:hover svg {
+  fill: #fff;
+}
+.title {
+  color: var(--black-color);
+  transition: all .3s ease ;
+}
+.title:hover {
+  color: var(--main-color)
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--black-color);
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  transition: all .3s ease-out;
+  bottom: -200px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.box:hover .btn {
+  bottom: 0;
+  opacity: 1;
+}
+.btn:hover {
+  background-color: var(--main-color);
+}
+.tooltip {
+  min-width: auto !important;
+  padding: 5px 10px;
+}

@@ -1,0 +1,52 @@
+
+.dropdown {
+  cursor: pointer;
+  height: 0;
+  transition: .4s;
+}
+
+.title {
+  cursor: pointer;
+  width: fit-content;
+  transition: .3s;
+}
+
+.title:hover {
+  color:var(--main-color)
+}
+
+
+.category-list.show {
+  animation: showAnimate .5s ease ;
+  height: 50px;
+
+}
+@keyframes showAnimate {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
+.category-list:not(.show) {
+  display: none;
+}
+.cat {
+  transition: .3s;
+  cursor: pointer;
+}
+
+.cat:hover {
+  color: var(--main-color)
+}
+ul a {
+  width: fit-content;
+}
+.cat  {
+  list-style-type:square;
+  margin: 0 20px;
+  width: fit-content ;
+  color: black;
+}

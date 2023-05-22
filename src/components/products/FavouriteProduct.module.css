@@ -1,0 +1,49 @@
+.img {
+  width: 150px;
+  height: 120px;
+}
+.close {
+  cursor: pointer;
+}
+
+.link {
+  transition: .3s;
+}
+.link:hover {
+  color: var(--main-color) !important
+}
+.table-size {
+  width: 0;
+}
+.title {
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 300px;
+  padding: 20px;
+  color: var(--black-color)
+}
+.btn {
+  background-color: var(--black-color);
+  color: #fff;
+  padding: 15px 25px;
+  margin-top: 30px;
+  display: block;
+  width: fit-content;
+  transition: .3s ease;
+
+}
+
+.btn:hover {
+  background-color: var(--main-color)
+}
+.shopping {
+  background-color: #ebebeb;
+}
+.shopping a{
+  transition: .3s ease;
+}
+.shopping a:hover {
+  color: var(--main-color) !important
+}

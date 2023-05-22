@@ -1,0 +1,32 @@
+.spinner {
+
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .select {
+    width: 120px;
+  }
+}
+
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: .3s ease;
+  color: #dadada;
+}
+
+.icon:hover, .icon.active{
+  fill: var(--main-color);
+}
+.load-btn {
+  transition: .3s ease;
+  background-color: transparent;
+
+
+}
+.load-btn:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+
+}

@@ -1,0 +1,22 @@
+.img {
+  width: 60px;
+  height: 60px;
+}
+.price {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.title {
+  transition: .3s ease;
+}
+
+.title:hover {
+  color: var(--main-color) !important
+}
+
+.close{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
