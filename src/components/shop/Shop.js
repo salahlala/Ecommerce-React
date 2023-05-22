@@ -51,7 +51,9 @@ const Shop = (products) => {
         <p className="m-0">
           Showing 1-
           <span className="me-2">
-            {productCategory.length < limit ? productCategory.length : limit}
+            {productCategory && productCategory.length < limit
+              ? productCategory.length
+              : limit}
           </span>
           results of
           <span className="ms-2">
