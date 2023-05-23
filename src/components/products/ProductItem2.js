@@ -46,7 +46,7 @@ const ProductItem2 = ({ product }) => {
   const addCartToast = () => {
     toast.success(`${product.title} added to cart`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -58,7 +58,7 @@ const ProductItem2 = ({ product }) => {
   const addWishlistToast = () => {
     toast.success(`${product.title} added to wishlist`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -71,7 +71,7 @@ const ProductItem2 = ({ product }) => {
   const removeWishListToast = () => {
     toast.error(`${product.title} removed from wishlist`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,

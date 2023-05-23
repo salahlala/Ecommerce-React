@@ -29,11 +29,6 @@ const ProductDetails = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handleFetchProducts]);
 
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-
   return (
     <>
       {!isLoading && products && (

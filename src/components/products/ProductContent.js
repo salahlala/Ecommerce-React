@@ -36,7 +36,7 @@ const ProdutContent = (props) => {
   const addCartToast = () => {
     toast.success(`${quantity} ${product.title} added to cart`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -48,7 +48,7 @@ const ProdutContent = (props) => {
   const addWishlistToast = () => {
     toast.success(`${product.title} added to wishlist`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -61,7 +61,7 @@ const ProdutContent = (props) => {
   const removeWishListToast = () => {
     toast.error(`${product.title} removed from wishlist`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -73,7 +73,7 @@ const ProdutContent = (props) => {
   const quantityMesageToast = () => {
     toast.error(`No more quantity available for this product!`, {
       position: "top-right",
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,

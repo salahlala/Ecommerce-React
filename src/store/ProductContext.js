@@ -202,8 +202,8 @@ const ProductState = ({ children }) => {
     mainBody.classList.remove("hidden");
   };
   const handleOpenModal = () => {
-    setIsOpen(true);
     mainBody.classList.add("hidden");
+    setIsOpen(true);
   };
 
   const handleCloseCart = () => {

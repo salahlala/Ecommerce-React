@@ -14,14 +14,13 @@ import Shop from "./components/shop/Shop";
 import NotFound from "./components/ui/NotFound";
 import { ProductContext } from "./store/ProductContext";
 import ViewCart from "./components/products/cart/ViewCart";
+import ScrollToTop from "./components/ui/ScrollToTop";
+import ScrollTop from "./components/ui/ScrollTop";
 import { ToastContainer } from "react-toastify";
-import { RiArrowUpSLine } from "react-icons/ri";
 import "react-toastify/dist/ReactToastify.css";
-
 function App() {
   const { sendRequest: fetchData, isLoading, error } = useHttp();
   const [products, setProducts] = useState([]);
-  const [scrollBtn, setScrollBtn] = useState();
   const { isOpen, cartOpen } = useContext(ProductContext);
   const handleFetchData = useCallback(() => {
     const sendData = (product) => {
@@ -43,27 +42,12 @@ function App() {
 
   useEffect(() => {
     handleFetchData();
-    const handleScrollBtnVisibilty = () => {
-      window.pageYOffset > 300 ? setScrollBtn(true) : setScrollBtn(false);
-    };
-
-    window.addEventListener("scroll", handleScrollBtnVisibilty);
-
-    return () => {
-      window.removeEventListener("scroll", handleScrollBtnVisibilty);
-    };
   }, [handleFetchData]);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <>
       <Header />
+      <ScrollTop />
       <Routes>
         <Route
           path="/"
@@ -88,14 +72,7 @@ function App() {
       {isOpen && <Modal />}
       {cartOpen && <Cart />}
       <Footer />
-      <div
-        onClick={handleScrollToTop}
-        className={`${
-          scrollBtn && "active"
-        } scroll-btn shadow position-fixed rounded-pill d-flex align-items-center justify-content-center`}
-      >
-        <RiArrowUpSLine />
-      </div>
+      <ScrollToTop />
       <ToastContainer />
     </>
   );
