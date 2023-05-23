@@ -105,11 +105,15 @@ const ProductItem2 = ({ product }) => {
         >
           <div className="row align-items-center border ms-0 me-0 h-100">
             <div className="col-lg-4 m-0 p-0">
-              <Link to={`/productDetails/${product.id}`}>
+              <Link
+                to={`/productDetails/${product.id}`}
+                aria-label="product-details"
+              >
                 <img
                   className={`${classes.img} m-img`}
                   src={product.thumbnail}
                   alt=""
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -117,6 +121,7 @@ const ProductItem2 = ({ product }) => {
               <Link
                 className={`${classes.title} mb-2 d-block text-uppercase fw-semibold mt-2`}
                 to={`/productDetails/${product.id}`}
+                aria-label="product-details"
               >
                 {product.title}
               </Link>
@@ -183,7 +188,10 @@ const ProductItem2 = ({ product }) => {
                   <div className={`${classes.icon} border `}>
                     <Tooltip title="Product Details" placement="top" arrow>
                       <Button className={classes.tooltip}>
-                        <Link to={`/productDetails/${product.id}`}>
+                        <Link
+                          to={`/productDetails/${product.id}`}
+                          aria-label="product-details"
+                        >
                           <AiOutlineLink />
                         </Link>
                       </Button>

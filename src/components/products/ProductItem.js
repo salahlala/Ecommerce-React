@@ -109,10 +109,14 @@ const ProductItem = ({ product, chmode }) => {
             mb-5 position-relative overflow-hidden ${classes.box}`}
         >
           <div className={`position-relative overflow-hidden`}>
-            <Link to={`/productDetails/${product.id}`}>
+            <Link
+              to={`/productDetails/${product.id}`}
+              aria-label={`product-${product.id}`}
+            >
               <img
                 className={`${classes.img} m-img`}
                 src={product.thumbnail}
+                loading="lazy"
                 alt=""
               />
             </Link>
@@ -139,6 +143,7 @@ const ProductItem = ({ product, chmode }) => {
             <Link
               className={`${classes.title} text-uppercase fw-semibold mt-2`}
               to={`/productDetails/${product.id}`}
+              aria-label={`product-${product.id}`}
             >
               {product.title}
             </Link>
@@ -172,7 +177,10 @@ const ProductItem = ({ product, chmode }) => {
             <div className={classes.icon}>
               <Tooltip title="Product Details" placement="left-end" arrow>
                 <Button className={classes.tooltip}>
-                  <Link to={`/productDetails/${product.id}`}>
+                  <Link
+                    to={`/productDetails/${product.id}`}
+                    aria-label={`product-details`}
+                  >
                     <AiOutlineLink />
                   </Link>
                 </Button>

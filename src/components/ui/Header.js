@@ -61,6 +61,7 @@ const Header = () => {
                 <button
                   type="submit"
                   className={`position-absolute border-0 bg-transparent ${classes.search}`}
+                  aria-label="search"
                 >
                   <AiOutlineSearch className="fs-4" />
                 </button>
